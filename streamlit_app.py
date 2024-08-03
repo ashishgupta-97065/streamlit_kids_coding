@@ -1,3 +1,8 @@
+if st.button("Clear All"):
+    # Clears all singleton caches:
+    st.experimental_singleton.clear()
+
+
 import streamlit as st
 # import pyautogui
  
