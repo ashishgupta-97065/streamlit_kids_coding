@@ -2,12 +2,12 @@ import streamlit as st
 import numpy as np
 import eval
 
-a = st.number_input("a")
-b = st.number_input("b")
-operator = st.text_input("operator")
-# expression = a + operator + b # simple string concatenation
-# result = eval(expression)
-# st.write(result)
+# a = st.number_input("a")
+# b = st.number_input("b")
+# operator = st.text_input("operator")
+# # expression = a + operator + b # simple string concatenation
+# # result = eval(expression)
+# # st.write(result)
 
 if st.button("Restart"):
     st.rerun()
