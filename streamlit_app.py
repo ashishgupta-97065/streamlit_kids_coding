@@ -1,5 +1,6 @@
 import streamlit as st
-
+from random import randrange
+print(randrange(10))
 
 st.title("🎈 My new app")
 st.write(
