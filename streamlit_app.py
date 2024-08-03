@@ -1,6 +1,13 @@
 import streamlit as st
 import numpy as np
 
+a = input('enter a value')
+b = input('enter a value') 
+op = input('enter an operand')
+expression = a + op + b # simple string concatenation
+result = eval(expression)
+
+
 if st.button("Restart"):
     st.rerun()
 
