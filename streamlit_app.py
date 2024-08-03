@@ -1,8 +1,8 @@
 import streamlit as st
 import pyautogui
  
-if st.button("Reset"):
-    pyautogui.hotkey("ctrl","F5")
+# if st.button("Reset"):
+#     pyautogui.hotkey("ctrl","F5")
 
 import streamlit as st
 
