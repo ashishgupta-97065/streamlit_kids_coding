@@ -1,6 +1,6 @@
 import streamlit as st
 import numpy as np
-X1 = np.random.randint(low=0, high=10, size=(15,))
+X1 = np.random.randint(low=0, high=10)
 
 st.title("🎈 My new app")
 st.write(X1)
