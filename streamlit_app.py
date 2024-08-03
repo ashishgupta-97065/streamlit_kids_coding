@@ -1,12 +1,3 @@
-# Install required libraries
-!pip install pyautogui
-
-import pyautogui
- 
-if st.button("Reset"):
-    pyautogui.hotkey("ctrl","F5")
-
-
 import streamlit as st
 
 st.title("🎈 My new app")
