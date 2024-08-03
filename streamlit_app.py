@@ -1,11 +1,4 @@
 import streamlit as st
-from streamlit import caching
-
-if st.button("Clear All"):
-    st.title("🎈 My new app")
-    caching.clear_cache()
-
-
 
 
 st.title("🎈 My new app")
