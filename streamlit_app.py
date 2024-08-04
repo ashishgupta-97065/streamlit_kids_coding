@@ -14,10 +14,6 @@ st.write(X1)
 if 'count_value' not in st.session_state:
     st.session_state.count_value = X1
 
-a=session_state.count_value
-
-st.write(a)
-
 X2 = st.number_input("YOUR ANSWER:", step=1)
 
 if st.button("check answer"):
@@ -27,25 +23,3 @@ if st.button("check answer"):
         st.write("your are correct")
     else:
         st.write("your are incorrect")
-                 
-    
-
-
-# # import eval
-
-# # a = st.number_input("a")
-# # b = st.number_input("b")
-# # operator = st.text_input("operator")
-# # # expression = a + operator + b # simple string concatenation
-# # # result = eval(expression)
-# # # st.write(result)
-
-
-
-# X1 = np.random.randint(low=0, high=10)
-
-# st.title("🎈 My new app")
-# st.write(X1)
-# st.write(
-#     "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-# )
