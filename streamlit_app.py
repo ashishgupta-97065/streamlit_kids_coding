@@ -14,6 +14,10 @@ if st.button("PRINT"):
     st.write(X1)
 
 with st.form(key='my_form'):
+    X1 = np.random.randint(low=0, high=10)
+
+    st.write(X1)
+
     a = st.text_input(label='Enter some text')
     submit_button = st.form_submit_button(label='Submit')
     st.write(a)
