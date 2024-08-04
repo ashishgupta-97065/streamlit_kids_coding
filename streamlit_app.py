@@ -14,8 +14,10 @@ if st.button("PRINT"):
     st.write(X1)
 
 with st.form(key='my_form'):
-   text_input = st.text_input(label='Enter some text')
-   submit_button = st.form_submit_button(label='Submit')
+    a = st.text_input(label='Enter some text')
+    submit_button = st.form_submit_button(label='Submit')
+    st.write(a)
+    
 
 
 # # import eval
