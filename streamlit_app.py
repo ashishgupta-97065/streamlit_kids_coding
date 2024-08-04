@@ -4,6 +4,7 @@ import numpy as np
 if st.button("Restart"):
     st.rerun()
 
+st.title("TEST RUN")
 
 X1 = np.random.randint(low=0, high=10)
 
