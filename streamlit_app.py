@@ -24,3 +24,5 @@ if st.button("check answer"):
         st.write("your are correct")
     else:
         st.write("your are incorrect")
+    
+    st.session_state.count_value = X1
