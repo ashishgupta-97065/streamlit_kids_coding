@@ -10,17 +10,21 @@ X1 = np.random.randint(low=0, high=10)
 
 st.write(X1)
 
+# Initialize session state variables
+if 'count_value' not in st.session_state:
+    st.session_state.count_value = X1
+
 if st.button("PRINT"):
     st.write(X1)
 
-with st.form(key='my_form'):
-    X2 = np.random.randint(low=0, high=10)
+X2 = st.number_input("YOUR ANSWER:")
 
-    st.write(X2)
-
-    a = st.text_input(label='Enter some text')
-    submit_button = st.form_submit_button(label='Submit')
-    st.write(a)
+if st.button("check answer"):
+    if X2==st.session_state.count_value:
+        st.write("your are correct")
+    else:
+        st.write("your are incorrect")
+                 
     
 
 
