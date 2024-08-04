@@ -13,7 +13,8 @@ st.write(X1)
 # Initialize session state variables
 if 'count_value' not in st.session_state:
     st.session_state.count_value = X1
-    a=session_state.count_value
+
+a=session_state.count_value
 
 st.write(a)
 
