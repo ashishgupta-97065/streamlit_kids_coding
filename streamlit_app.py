@@ -13,6 +13,7 @@ st.write(X1)
 # Initialize session state variables
 if 'count_value' not in st.session_state:
     st.session_state.count_value = X1
+    a=session_state.count_value
 
 if st.button("PRINT"):
     st.write(X1)
@@ -20,7 +21,9 @@ if st.button("PRINT"):
 X2 = st.number_input("YOUR ANSWER:", step=1)
 
 if st.button("check answer"):
-    if X2==st.session_state.count_value:
+    st.write("question was:", a)
+    st.write("Your answer", X2)
+    if X2==a:
         st.write("your are correct")
     else:
         st.write("your are incorrect")
