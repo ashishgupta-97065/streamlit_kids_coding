@@ -17,7 +17,7 @@ if 'count_value' not in st.session_state:
 if st.button("PRINT"):
     st.write(X1)
 
-X2 = st.number_input("YOUR ANSWER:")
+X2 = st.number_input("YOUR ANSWER:", step=1)
 
 if st.button("check answer"):
     if X2==st.session_state.count_value:
