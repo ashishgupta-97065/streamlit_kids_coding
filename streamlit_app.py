@@ -17,10 +17,10 @@ if 'count_value' not in st.session_state:
 X2 = st.number_input("YOUR ANSWER:", step=1)
 
 if st.button("check answer"):
-    st.write("Actual answer: ", session_state.count_value)
+    st.write("Actual answer: ", st.session_state.count_value)
     st.write("Your answer: ", X2)
     
-    if X2==session_state.count_value:
+    if X2==st.session_state.count_value:
         st.write("your are correct")
     else:
         st.write("your are incorrect")
