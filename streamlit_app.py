@@ -3,7 +3,7 @@ import numpy as np
 
 
 if st.button("Restart"):
-    st.caching.clear_cache()
+    st.cache.clear_cache()
     st.rerun()
     
 
