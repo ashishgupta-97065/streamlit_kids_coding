@@ -1,8 +1,12 @@
 import streamlit as st
 import numpy as np
+from streamlit import caching
+
 
 if st.button("Restart"):
+    caching.clear_cache()
     st.rerun()
+    
 
 st.title("TEST RUN")
 
