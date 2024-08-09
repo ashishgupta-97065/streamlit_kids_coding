@@ -10,20 +10,20 @@ with st.form("my_form"):
   st.write("Inside the form")
   st.title("This is a maths Sats test")
   st.write("Add these two numbers:")
-  n1=np.random.randint(low=20,high=30)
-  n2=np.random.randint(low=50,high=100)
+  a1=np.random.randint(low=20,high=30)
+  a2=np.random.randint(low=50,high=100)
   
-  st.write("First number is " , n1)
-  st.write("Second number is " , n2)
+  st.write("First number is " , a1)
+  st.write("Second number is " , a2)
 
   
-  s=n1+n2
-  a=st.number_input(" Enter your answer",step=1)
+  a3=n1+n2
+  a4=st.number_input(" Enter your answer",step=1)
   if st.form_submit_button("Submit"):
-    st.write("Question: ", st.session_state.n1, " + ", st.session_state.n2)
-    st.write("Actual Answer: ", s)
-    st.write("Your Answer: ", a)
-    if a==s:
+    st.write("Question: ", a1, " + ", a2)
+    st.write("Actual Answer: ", a3)
+    st.write("Your Answer: ", a4)
+    if a3==a4:
       st.write( " YAY YOU ARE CORRRRRRRREEEEEECCCCCCTTTTTTTTTTTTTTTTTT")
     else:
       st.write(" YOU GET A RED CAAAAAAAAARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRD")
