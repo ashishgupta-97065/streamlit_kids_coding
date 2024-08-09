@@ -1,35 +1,34 @@
 import streamlit as st
 import numpy as np
 
+if st.button("Refresh"):
+  st.cache_resource.clear()
+  st.rerun()
 
-if st.button("Restart"):
-    st.cache_resource.clear()
-    st.rerun()
-    
+st.title("This is a maths Sats test")
+st.write("please enter you answer here")
+n1=np.random.randint(low=20,high=30)
+n2=np.random.randint(low=50,high=100)
+s=n1+n2
 
-st.title("TEST RUN")
-
-X1 = np.random.randint(low=0, high=10)
-
-
-
-# Initialize session state variables
 if 'answer' not in st.session_state:
-    st.write("inside session creation loop")
-    st.session_state.answer = X1
-    st.write(X1)
-    
+  # st.write("inside session creation:")
+  st.session_state.answer = s
+  # st.write("session answer:",s)
 
-X2 = st.number_input("YOUR ANSWER:", step=1)
 
-if st.button("check answer"):
-    a = st.session_state.answer
-    st.write("Actual answer: ", a)
-    st.write("Your answer: ", X2)
-    
-    if X2==a:
-        st.write("your are correct")
-    else:
-        st.write("your are incorrect")
-    
-    st.session_state.answer = X1
+st.write("First number is " , n1)
+st.write("Second number is " , n2)
+# st.write("The first sum is" , s)      
+a=st.number_input(" Enter your answer",step=1)
+
+
+if st.button("check your answer"):
+  ans = st.session_state.answer
+  st.write("Actual Answer: ", ans)
+  st.write("Your Answer: ", a)
+  if a==ans:
+    st.write( " YAY YOU ARE CORRRRRRRREEEEEECCCCCCTTTTTTTTTTTTTTTTTT")
+  else:
+    st.write(" YOU GET A RED CAAAAAAAAARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRD")
+  st.session_state.answer = s
