@@ -30,7 +30,7 @@ a=st.number_input(" Enter your answer",step=1)
 
 if st.button("check your answer"):
   ans = st.session_state.answer
-  st.write("Question: ", session_state.n1, " + ", session_state.n2)
+  st.write("Question: ", st.session_state.n1, " + ", st.session_state.n2)
   st.write("Actual Answer: ", ans)
   st.write("Your Answer: ", a)
   if a==ans:
