@@ -14,7 +14,7 @@ s=n1+n2
 
 st.write("session answer: ", st.session_state.answer)
 
-if 'answer' not in st.session_state or st.session_state.answer = 0:
+if 'answer' not in st.session_state or st.session_state.answer == 0:
   st.write("inside session creation:")
   st.session_state.answer = s
   st.write("session answer:",s)
