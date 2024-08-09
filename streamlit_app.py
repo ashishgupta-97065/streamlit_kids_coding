@@ -12,9 +12,9 @@ n2=np.random.randint(low=50,high=100)
 s=n1+n2
 
 if 'answer' not in st.session_state:
-  # st.write("inside session creation:")
+  st.write("inside session creation:")
   st.session_state.answer = s
-  # st.write("session answer:",s)
+  st.write("session answer:",s)
 
 
 st.write("First number is " , n1)
