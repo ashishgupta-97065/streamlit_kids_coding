@@ -9,13 +9,18 @@ if st.button("Refresh"):
 with st.form("my_form"):
   st.write("Inside the form")
   st.title("This is a maths Sats test")
-  st.write("please enter you answer here")
+  st.write("Add these two numbers:")
   n1=np.random.randint(low=20,high=30)
   n2=np.random.randint(low=50,high=100)
+  
+  st.write("First number is " , n1)
+  st.write("Second number is " , n2)
+
+  
   s=n1+n2
   a=st.number_input(" Enter your answer",step=1)
   if st.form_submit_button("Submit"):
-    if a==ans:
+    if a==s:
       st.write( " YAY YOU ARE CORRRRRRRREEEEEECCCCCCTTTTTTTTTTTTTTTTTT")
     else:
       st.write(" YOU GET A RED CAAAAAAAAARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRD")
