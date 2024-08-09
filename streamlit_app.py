@@ -16,6 +16,8 @@ s=n1+n2
 
 if 'answer' not in st.session_state or st.session_state.answer == 0:
   # st.write("inside session creation:")
+  st.session_state.n1 = n1
+  st.session_state.n2 = n2
   st.session_state.answer = s
   # st.write("session answer:",s)
 
@@ -28,6 +30,7 @@ a=st.number_input(" Enter your answer",step=1)
 
 if st.button("check your answer"):
   ans = st.session_state.answer
+  st.write("Question: ", session_state.n1, " + ", session_state.n2)
   st.write("Actual Answer: ", ans)
   st.write("Your Answer: ", a)
   if a==ans:
@@ -35,3 +38,5 @@ if st.button("check your answer"):
   else:
     st.write(" YOU GET A RED CAAAAAAAAARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRD")
   st.session_state.answer = s
+  st.session_state.n1 = n1
+  st.session_state.n2 = n2
