@@ -20,6 +20,9 @@ with st.form("my_form"):
   s=n1+n2
   a=st.number_input(" Enter your answer",step=1)
   if st.form_submit_button("Submit"):
+    st.write("Question: ", st.session_state.n1, " + ", st.session_state.n2)
+    st.write("Actual Answer: ", ans)
+    st.write("Your Answer: ", a)
     if a==s:
       st.write( " YAY YOU ARE CORRRRRRRREEEEEECCCCCCTTTTTTTTTTTTTTTTTT")
     else:
