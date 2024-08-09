@@ -17,7 +17,7 @@ with st.form("my_form"):
   st.write("Second number is " , a2)
 
   
-  a3=n1+n2
+  a3=a1+a2
   a4=st.number_input(" Enter your answer",step=1)
   
   if st.form_submit_button("Submit"):
