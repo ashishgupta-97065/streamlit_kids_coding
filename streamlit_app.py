@@ -6,6 +6,23 @@ if st.button("Refresh"):
   st.session_state.answer = 0
   st.rerun()
 
+with st.form("my_form"):
+  st.write("Inside the form")
+  st.title("This is a maths Sats test")
+  st.write("please enter you answer here")
+  n1=np.random.randint(low=20,high=30)
+  n2=np.random.randint(low=50,high=100)
+  s=n1+n2
+  a=st.number_input(" Enter your answer",step=1)
+  if st.form_submit_button("Submit"):
+    if a==ans:
+      st.write( " YAY YOU ARE CORRRRRRRREEEEEECCCCCCTTTTTTTTTTTTTTTTTT")
+    else:
+      st.write(" YOU GET A RED CAAAAAAAAARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRD")
+st.write("Outside the form")
+
+
+
 st.title("This is a maths Sats test")
 st.write("please enter you answer here")
 n1=np.random.randint(low=20,high=30)
